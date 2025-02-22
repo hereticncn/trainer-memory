@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+  :focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  /*height: 100%;*/
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+  
+input, button, textarea {
+  font-family: inherit;
+}
+  
+input::-ms-clear {
+  display: none;
+}
+  
+button {
+  cursor: pointer;
+}
+  
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+} 
+  
+a, a:visited {
+  text-decoration: none;
+}
+  
+a:hover {
+  text-decoration: none;
+  }
+  
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.noselect{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/******************************/
+
+.content{
+  margin: 200px auto;
+  padding: 0px 40px;
+  max-width: 700px;
+
+  @media (min-width: 200px) and (max-width: 700px){
+    margin: 50px auto;
+  }
+
+  @media (min-width: 200px) and (max-width: 500px){
+    padding: 0 20px;
+  }
+}
+
+h4 {
+  font-family: "Source Code Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+
+  @media (min-width: 200px) and (max-width: 500px){
+    font-size: 15px;
+  }
+}
+
+h3 {
+  font-family: "Source Code Pro", serif;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: "Source Code Pro", serif;
+  font-size: 15px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #002b17c2;
+}
+
+.words{
+  padding: 40px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+}
+
+.start {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #002b17ba;
+  box-shadow: 2px 2px 0 0px #00000075;
+
+  font-family: "Source Code Pro", serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #fdfdfd;;
+
+  @media (min-width: 200px) and (max-width: 500px){
+    width: 170px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+/*button {
+  width: 200px;
+  height: 20px;
+}*/
+
+.checking__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checking__btn{
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: 200px) and (max-width: 500px){
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.check, .next, .reload {
+  display: flex;
+  width: 140px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #0e3d1c70;
+  box-shadow: 1px 1px 1px 0px #000000a3;
+
+  @media (min-width: 200px) and (max-width: 500px){
+    width: 250px;
+  }
+}
+
+.check:active, .next:active, .reload:active {
+  box-shadow: none;
+}
+
+.input{
+  width: 300px;
+  height: 36px;
+  border: 1px solid #002b17c2;
+  border-radius: 20px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #002b17c2;
+}
+
+input, .check, h3, .next, .reload {
+  display: none;
+}
